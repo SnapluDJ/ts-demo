@@ -54,7 +54,6 @@ const TextField: React.FC<Props> = ({ person, handleChange  }) => {
 
   const [todos, dispatch] = useReducer(TodoReducer, [])
 
-
   return <div ref={divRef}>
     <input ref={inputRef} onChange={handleChange} />
 
