@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import TextField from './TextField';
-import Counter from './Counter';
+import TextField from "./TextField";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -11,10 +11,12 @@ function App() {
       /> */}
 
       <Counter>
-        {(count, setCount) => <div>
-          {count}
-          <button onClick={() => setCount(count + 1)}>+</button>
-        </div>}
+        {(count, setCount) => (
+          <div>
+            {count}
+            <button onClick={() => setCount(count + 1)}>+</button>
+          </div>
+        )}
       </Counter>
     </div>
   );
